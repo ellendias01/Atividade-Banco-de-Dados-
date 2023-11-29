@@ -180,8 +180,8 @@ Este banco de dados foi projetado para gerenciar informações sobre minha cole�
 
 **✏️ CREATE (criar)**
 
-<img src= /img/Insert.png  weight= '200px' height = '200px' >  <img src= /img/Insert1.png  weight= '200px' height = '200px' > 
-
+<img src= /img/Insert.png  weight= '200px' height = '200px'>  <img src= /img/Insert1.png  weight= '200px' height = '200px' > 
+ 
 **📘 READ (ler)**
 
 <img src= /img/Select.png  weight= '250px' height = '250px' > 
@@ -193,3 +193,108 @@ Este banco de dados foi projetado para gerenciar informações sobre minha cole�
 **🗑️ DELETE (excluir)**
 
 <img src= /img/Delet.png  weight= '200px' height = '200px' >  <img src= /img/Delet1.png  weight= '200px' height = '200px' > 
+
+## :clipboard: **Relatório**:
+
+**1.Seleção de Livros com base em suas cores**
+- Select nome, cor, páginas from Livro where cor in ('vermelho', 'amarelo', 'preto');
+<img width="501" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/67626c5f-5206-4cd2-bfba-73de96b343fc"><br>
+
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+
+**2.Listar todos os livros com seus autores**
+- Select Livro.nome as Livro, Autor.nome as Autor from Livros_Autor <br>
+JOIN Livro ON Livros_Autor.id_Livro = Livro.id_Livro <br>
+JOIN Autor ON Livros_Autor.id_Autor = Autor.id_Autor;
+
+<img width="300" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/8d848104-aafb-4102-bf70-7d95114616fc" > <img width="250" alt="Captura de tela 2023-11-29 145024" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/e2ddb990-6fd0-41a6-81a4-44ef0c49d4d8">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**3.Listar todas as adaptações de filmes**
+- Select Livro.nome AS Livro, Adaptacao.tipo, Adaptacao.streaming, Adaptacao.ano from Adaptacao <br>
+JOIN Livro ON Adaptacao.id_Livro = Livro.id_Livro where Adaptacao.tipo = 'Filme';
+<img width="326" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/d8ff8730-dd00-4fe5-a8b6-b6ccca705b55">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**4.Exibir os gêneros associados a um livro específico**
+- Select Livro.nome, Genero.genero from Livro <br>
+JOIN LivroGenero ON Livro.id_Livro = LivroGenero.id_Livro <br>
+JOIN Genero ON LivroGenero.id_Genero = Genero.id_genero where Livro.nome = 'Gente Ansiosa';
+
+<img width="184" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/d2e1ee26-934f-4726-972d-b2bd58e01196">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**5.Listar todos os autores de uma nacionalidade específica**
+- Select Autor.nome, Autor.nacionalidade from Autor where Autor.nacionalidade like 'Britânic%';
+
+<img width="155" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/74b0d42a-c311-4abd-9cfe-fe9e681ec909">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**6.Mostrar as adaptações que foram anunciadas ou já foram lançadas**
+- Select Livro.nome, Adaptacao.tipo, Adaptacao.ano from Livro <br>
+JOIN Adaptacao ON Livro.id_Livro = Adaptacao.id_Livro where Adaptacao.tipo in ('Anunciado', 'Filme', 'Série');
+
+<img width="290" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/013df4ce-72a8-4969-8bf3-3ce3016423c8">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**7.Listar os livros ilustrados, ordenados por volume**
+- Select nome, ilustrado, volume from Livro where ilustrado = 'Sim' order by volume;
+
+<img width="266" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/35971f03-471f-4dc6-925f-eb64573807e3">
+
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**8.Exibir os livros que estão no nicho '1' e posição 'A'**
+
+- Select Livro.nome AS Livro, Posicao.nicho, Posicao.Posição from Livro <br>
+JOIN Posicao ON Livro.id_Posicao = Posicao.id_Posicao where Posicao.nicho = '1' and Posicao.Posição = 'A';
+
+<img width="252" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/679a3f26-f106-45e5-9c47-999e08184e34">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**9.Listar os gêneros dos livros e a quantidade de livros por gênero**
+- Select genero, COUNT(*) as total from LivroGenero <br>
+JOIN Genero on LivroGenero.id_genero = Genero.id_genero group by genero;
+
+<img width="131" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/4bbcb882-a605-489b-9448-7a3258b83eb0"> <img width="131" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/f89a17cb-6561-4404-ba48-9ccdfd73e3e5">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**10.Calcular a média de páginas dos livros**
+
+- Select AVG(páginas) as media_paginas from Livro;
+
+<img width="120" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/2a3c3c21-3282-4652-be6f-1448811b1817">
+
+<p align="center">
+..............................................................................................................................................................................................................................................
+</p>  
+
+**11.Calcular a média de páginas dos livros**
