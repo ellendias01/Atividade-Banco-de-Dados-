@@ -21,6 +21,10 @@ Este banco de dados foi projetado para gerenciar informações sobre minha cole�
 |7. **Adaptacao:**     | id_Adaptacao (identificador único), id_Livro (chave estrangeira referenciando Livro), tipo, streaming, idioma, dublado, legendado, duração, ano.      | Vincula-se a Livro por meio da chave estrangeira id_Livro.     |
 
 ## :pencil: **Modelagem Conceitual**:
+<img src= /img/MC.png >
 
+## :page_facing_up: **Modelagem Lógica**:
+
+<img src= /img/ML.png >
 
 
