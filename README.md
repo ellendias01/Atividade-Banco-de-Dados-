@@ -175,6 +175,152 @@ Este banco de dados foi projetado para gerenciar informações sobre minha cole�
 |      32      |   22     |  Teatro  |            |Português|         |           | 02:00   |   2023   |
 
 
+## Tabelas Intermediárias ##
+
+**7.🔖 Livro_Autor:**
+
+| id_Livro_Autor | id_Livro | id_Autor |
+| :---           | :---:    | :---:    |
+| 1              | 1        | 15       |
+| 2              | 2        | 2        |
+| 3              | 3        | 4        |
+| 4              | 4        | 6        |
+| 5              | 5        | 3        |
+| 6              | 6        | 3        |
+| 7              | 7        | 11       |
+| 8              | 8        | 1        |
+| 9              | 9        | 14       |
+| 10             | 10       | 7        |
+| 11             | 11       | 10       |
+| 12             | 12       | 5        |
+| 13             | 13       | 5        |
+| 14             | 14       | 9        |
+| 15             | 15       | 9        |
+| 16             | 16       | 12       |
+| 17             | 17       | 12       |
+| 18             | 18       | 12       |
+| 19             | 19       | 13       |
+| 20             | 20       | 8        |
+| 21             | 21       | 16       |
+| 22             | 22       | 17       |
+| 23             | 23       | 7        |
+| 24             | 24       | 18       |
+| 25             | 25       | 19       |
+
+**8.:dizzy: LivroGenero:**
+
+| id_LivroGenero | id_Livro | id_genero |
+| :---           | :---:    | :---:     |
+| 1              | 1        | 1         |
+| 2              | 1        | 3         |
+| 3              | 1        | 6         |
+| 4              | 1        | 2         |
+| 5              | 2        | 2         |
+| 6              | 2        | 4         |
+| 7              | 3        | 2         |
+| 8              | 3        | 14        |
+| 9              | 4        | 1         |
+| 10             | 4        | 3         |
+| 11             | 4        | 10        |
+| 12             | 4        | 14        |
+| 13             | 5        | 2         |
+| 14             | 5        | 5         |
+| 15             | 5        | 6         |
+| 16             | 5        | 14        |
+| 17             | 6        | 2         |
+| 18             | 6        | 5         |
+| 19             | 6        | 6         |
+| 20             | 6        | 14        |
+| 21             | 7        | 1         |
+| 22             | 7        | 3         |
+| 23             | 7        | 5         |
+| 24             | 7        | 7         |
+| 25             | 7        | 12        |
+| 26             | 8        | 1         |
+| 27             | 8        | 6         |
+| 28             | 8        | 8         |
+| 29             | 8        | 14        |
+| 30             | 9        | 1         |
+| 31             | 9        | 3         |
+| 32             | 9        | 8         |
+| 33             | 9        | 14        |
+| 34             | 10       | 1         |
+| 35             | 10       | 2         |
+| 36             | 10       | 5         |
+| 37             | 10       | 6         |
+| 38             | 10       | 14        |
+| 39             | 11       | 2         |
+| 40             | 11       | 5         |
+| 41             | 11       | 14        |
+| 42             | 12       | 1         |
+| 43             | 12       | 2         |
+| 44             | 12       | 7         |
+| 45             | 12       | 11        |
+| 46             | 12       | 10        |
+| 47             | 12       | 14        |
+| 48             | 12       | 9         |
+| 49             | 13       | 9         |
+| 50             | 13       | 1         |
+| 51             | 13       | 2         |
+| 52             | 13       | 7         |
+| 53             | 13       | 11        |
+| 54             | 13       | 10        |
+| 55             | 13       | 14        |
+| 56             | 14       | 1         |
+| 57             | 14       | 8         |
+| 58             | 14       | 10        |
+| 59             | 14       | 12        |
+| 60             | 14       | 14        |
+| 61             | 15       | 1         |
+| 62             | 15       | 8         |
+| 63             | 15       | 10        |
+| 64             | 15       | 12        |
+| 65             | 15       | 14        |
+| 66             | 16       | 1         |
+| 67             | 16       | 7         |
+| 68             | 16       | 9         |
+| 69             | 16       | 14        |
+| 70             | 17       | 1         |
+| 71             | 17       | 7         |
+| 72             | 17       | 9         |
+| 73             | 17       | 14        |
+| 74             | 18       | 1         |
+| 75             | 18       | 7         |
+| 76             | 18       | 9         |
+| 77             | 18       | 14        |
+| 78             | 19       | 2         |
+| 79             | 19       | 4         |
+| 80             | 19       | 5         |
+| 81             | 19       | 7         |
+| 82             | 19       | 14        |
+| 83             | 20       | 1         |
+| 84             | 20       | 8         |
+| 85             | 20       | 10        |
+| 86             | 20       | 13        |
+| 87             | 20       | 14        |
+| 88             | 21       | 1         |
+| 89             | 21       | 3         |
+| 90             | 21       | 8         |
+| 91             | 21       | 14        |
+| 92             | 22       | 1         |
+| 93             | 22       | 8         |
+| 94             | 22       | 14        |
+| 95             | 23       | 1         |
+| 96             | 23       | 6         |
+| 97             | 23       | 8         |
+| 98             | 23       | 14        |
+| 99             | 24       | 2         |
+| 100            | 24       | 6         |
+| 101            | 24       | 7         |
+| 102            | 24       | 9         |
+| 103            | 24       | 14        |
+| 104            | 25       | 1         |
+| 105            | 25       | 6         |
+| 106            | 25       | 8         |
+| 107            | 25       | 10        |
+| 108            | 25       | 14        |
+
+
 ## ⚙️ **CRUD**:
 **CREATE (criar), READ (ler), UPDATE (atualizar) e DELETE (excluir).**
 
@@ -297,4 +443,16 @@ JOIN Genero on LivroGenero.id_genero = Genero.id_genero group by genero;
 ..............................................................................................................................................................................................................................................
 </p>  
 
-**11.Calcular a média de páginas dos livros**
+**11.Listar todos os livros com seus gêneros correspondentes**
+- Select Livro.nome, Genero.genero from Livro <br>
+JOIN LivroGenero ON Livro.id_Livro = LivroGenero.id_Livro <br>
+JOIN Genero ON LivroGenero.id_genero = Genero.id_genero;
+
+<img width="233" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/6f9cafd1-163f-4e3a-a27c-c8941a9f8ac6">
+<img width="233" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/370f26b2-3b80-4e8e-99e6-3083b5272e25">
+<img width="236" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/7c6e4311-843f-4ac9-9479-ff4066200dc5">
+<img width="234" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/cd626bec-ae5e-4bf1-aee3-e738886615a4">
+<img width="229" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/9596f182-ab57-45d1-b156-f44870f19ff9">
+<img width="234" alt="image" src="https://github.com/ellendias01/Atividade-Banco-de-Dados-/assets/145167118/b3bd11f2-d1c5-4e29-bc19-ec5849401f30">
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
