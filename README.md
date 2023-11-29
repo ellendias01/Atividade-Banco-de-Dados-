@@ -180,6 +180,16 @@ Este banco de dados foi projetado para gerenciar informações sobre minha cole�
 
 **✏️ CREATE (criar)**
 
+<img src= /img/Insert.png  weight= '200px' height = '200px' >  <img src= /img/Insert1.png  weight= '200px' height = '200px' > 
+
 **📘 READ (ler)**
+
+<img src= /img/Select.png  weight= '250px' height = '250px' > 
+
 **:arrows_counterclockwise: UPDATE (atualizar)**
+
+<img src= /img/Update.png  weight= '150px' height = '150px' >  <img src= /img/Update1.png  weight= '150px' height = '150px' > 
+
 **🗑️ DELETE (excluir)**
+
+<img src= /img/Delet.png  weight= '200px' height = '200px' >  <img src= /img/Delet1.png  weight= '200px' height = '200px' > 
